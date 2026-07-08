@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's For Dinner</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav-bar navbar-expand-lg navbar-light  bg-white shadow-sm py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="text-white rounded-circle d-flex align-items-center justify-content-center me-2 nav-icon ">
+                    <i class="fa-solid fa-utensils fs-6"></i>
+                </span>
+                <div>
+                    <div class="fw-bold fs-5 ">What's For Dinner</div>
+                    <small class="text-muted d-block">Your daily meal inspiration</small>
+                </div>
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-bookmark fs-5 text-secondary"></i>
+                <i class="fa-solid fa-clock-rotate-left fs-5 text-secondary"></i>
+                <i class="fa-solid fa-gear fs-5 text-secondary"></i>
+                <img src="images/avatar-4.jpg" alt="profile" class="rounded-circle profile">
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row shadow-sm rounded-4 overflow-hidden bg-white position-relative">
+            <div class="col-md-5 p-0 position-relative">
+                <img id="mealImage" class="w-100 h-100 img-meal" src="" alt="">
+                <span class="position-absolute top-0 start-0 m-3 bg-white rounded-pill px-3 py-1 shadow-sm">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <span id="text-rating"></span> (<span id="mealReviews"></span>)
+                </span>
+                <div
+                    class="position-absolute bottom-0 start-0 end-0 m-3 bg-white rounded-4 shadow-sm p-3 d-flex justify-content-around text-center">
+                    <div><i class="fa-solid fa-clock text-warning"></i><br><small class="text-muted">Prep
+                            Time</small><br><strong id="mealPrepTime"></strong></div>
+                    <div><i class="fa-solid fa-fire text-danger"></i><br><small class="text-muted">Cook
+                            Time</small><br><strong id="mealCookTime"></strong></div>
+                    <div><i class="fa-solid fa-users text-primary"></i><br><small
+                            class="text-muted">Servings</small><br><strong id="mealServings"></strong></div>
+                </div>
+            </div>
+            <div class="col-md-7 p-4">
+                <div class="mb-2">
+                    <span id="mealDifficulty"
+                        class="badge bg-success-subtle text-success rounded-pill px-3 py-2"></span>
+                    <span id="mealCategory" class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2"></span>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <h2 id="mealDisplay" class="fw-bold"></h2>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-bookmark fs-5" style="color:#fd7e14; cursor:pointer;"></i>
+                        <i class="fa-solid fa-share-nodes fs-5" style="color:#fd7e14; cursor:pointer;"></i>
+                    </div>
+                </div>
+                <p id="mealDescription" class="text-muted"></p>
+                <div id="prepWarning"
+                    class="border-start border-danger border-3 bg-danger-subtle p-3 rounded mb-3 d-none">
+                    <div class="fw-bold text-danger"><i class="fa-solid fa-triangle-exclamation"></i> Extended
+                        Preparation Time</div>
+                    <small class="text-danger">This recipe requires more than 45 minutes to prepare. Plan
+                        accordingly!</small>
+                </div>
+                <ul class="nav nav-tabs mb-3" id="recipeTabs">
+                    <li class="nav-item"><button class="nav-link active" data-tab="ingredients"><i
+                                class="fa-solid fa-list"></i> Ingredients</button></li>
+                    <li class="nav-item"><button class="nav-link" data-tab="instructions"><i
+                                class="fa-solid fa-book-open"></i> Instructions</button></li>
+                    <li class="nav-item"><button class="nav-link" data-tab="nutrition"><i
+                                class="fa-solid fa-chart-pie"></i> Nutrition</button></li>
+                    <li class="nav-item"><button class="nav-link" data-tab="tips"><i class="fa-solid fa-lightbulb"></i>
+                            Chef's Tips</button></li>
+                </ul>
+                <div id="tab-ingredients" class="tab-pane">
+                    <ol id="ingredientsList" class="list-unstyled"></ol>
+                </div>
+                <div id="tab-instructions" class="tab-pane d-none">
+                    <ol id="instructionsList" class="list-unstyled"></ol>
+                </div>
+                <div id="tab-nutrition" class="tab-pane d-none">
+                    <div class="row" id="nutritionGrid"></div>
+                </div>
+                <div id="tab-tips" class="tab-pane d-none">
+                    <ul id="tipsList" class="list-unstyled"></ul>
+                </div>
+                <button id="dinnerBtn" class="btn btn-primary btn-lg ">
+                    <i class="fa-solid fa-arrows-rotate"></i> Try Another recipe
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
