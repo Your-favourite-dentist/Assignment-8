@@ -1,0 +1,225 @@
+.nav-icon{width: 40px ; height: 40px; background-color: orangered;}
+
+.profile{width: 36px; height: 36px; object-fit: cover;}
+* {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+}
+
+.nav-bar {
+  border-bottom: 1px solid #eee;
+}
+
+.img-meal {
+  min-height: 500px;
+  object-fit: cover;
+}
+
+#mealImage + span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.col-md-5 .position-absolute.bottom-0 {
+  backdrop-filter: blur(4px);
+}
+
+.col-md-5 .position-absolute.bottom-0 strong {
+  font-size: 15px;
+  color: #333;
+}
+
+#mealDifficulty,
+#mealCategory {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#mealDisplay {
+  font-size: 28px;
+  color: #2d2d2d;
+}
+
+#mealDescription {
+  font-size: 15px;
+}
+
+#recipeTabs {
+  border-bottom: 2px solid #eee;
+}
+
+#recipeTabs .nav-link {
+  border: none;
+  color: #8a8a8a;
+  font-weight: 500;
+  padding: 10px 16px;
+  background: transparent;
+}
+
+#recipeTabs .nav-link i {
+  margin-right: 4px;
+}
+
+#recipeTabs .nav-link.active {
+  color: #ff5e62;
+  border-bottom: 3px solid #ff5e62;
+  background: transparent;
+}
+
+#ingredientsList li span:last-child,
+#instructionsList li span:last-child {
+  color: #444;
+  line-height: 1.6;
+  padding-top: 3px;
+}
+
+#nutritionGrid > div {
+  font-size: 15px;
+  color: #444;
+}
+
+#nutritionGrid strong {
+  color: #222;
+  margin-left: 4px;
+}
+
+#prepWarning {
+  background-color: #fdecea;
+}
+
+#tipsList li {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  border-left: 3px solid #f0ad4e;
+  border-radius: 8px;}
+  #tipsList li::before {
+  content: "";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: #ff8a65;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+#nutritionGrid {
+  row-gap: 20px;
+}
+
+#nutritionGrid > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #444;
+  padding-right: 20px;
+}
+
+#nutritionGrid > div i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+#nutritionGrid strong {
+  font-size: 17px;
+  color: #222;
+  font-weight: 700;
+}
+#ingredientsList .badge,
+#instructionsList .badge {
+  background-color: #f0932b ;
+  color: #fff ;
+  width: 32px ;
+  height: 32px ;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 12px ;
+}
+
+
+.tab-pane {
+    display: block;
+    height: 450px;
+    overflow-y: scroll;
+    padding-right: 12px;
+}
+.tab-pane.d-none {
+    display: none;
+}
+
+
+
+.tab-pane {
+    scrollbar-width: thin;
+    scrollbar-color:rgb(224, 209, 209) #d3b7b7;
+}
+.tab-pane:hover {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(236, 220, 220) brown;
+}
+
+
+.tab-pane::-webkit-scrollbar {
+    width: 7px;
+}
+
+.tab-pane::-webkit-scrollbar-track {
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.tab-pane::-webkit-scrollbar-thumb {
+    background: #fd7e14;    
+    border-radius: 10px;
+}
+
+.tab-pane::-webkit-scrollbar-thumb:hover {
+    background: #e66b00;
+}
+#dinnerBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 14px 28px;
+    width: fit-content;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #F7B54A 0%,
+        #F5A24F 20%,
+        #F38C66 55%,
+        #F06CA7 100%
+    );
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .3s ease , opacity .3s ease;
+    box-shadow: 0 4px 10px rgba(245, 162, 79, 0.25);}
+
+#dinnerBtn:hover {
+    transform: translateY(-6px);
+}
+
